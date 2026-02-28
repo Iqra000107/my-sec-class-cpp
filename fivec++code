@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int arr[6] = { 12, 45, 7, 89, 34, 23 };
+	int min = arr[0];
+	int max = arr[0];
+	int sum = 0;
+	int avg;
+	for (int i = 1; i < 6; i++) {
+		if (arr[i] > max)
+			max = arr[i];
+		if (arr[i] < min)
+			min = arr[i];
+	}
+		cout <<"max num"<< max;
+		cout << "min num" << min;
+		for (int i = 0; i < 6; i++) {
+			sum += arr[i];
+		}
+		cout << sum;
+		int average = sum / 6;
+		cout << "average of array" << average;
+	
+	return 0;
+}
